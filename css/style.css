@@ -22,6 +22,7 @@ div{
 h1
 {
   text-align: left;
+   height: 10vh
 }
 
 li
@@ -29,6 +30,21 @@ li
   text-align: left;
 
 }
+
+
+table
+{
+
+
+}
+
+.div-class{
+  height: 40vh
+}
+
+
+
+
 
 .rating > span:hover:before {
    content: "\2605";
@@ -107,12 +123,14 @@ td
   animation: rollDown 5s forwards infinite;
 }
 
+
 .text-box div:nth-child(2){
   animation: rollDown2 5s forwards infinite;
+
 }
 
 .text-box div:nth-child(3){
-  animation: rollDown3 3s forwards infinite;
+  animation: rollDown3 5s forwards infinite;
 }
 
 @keyframes rollDown {
@@ -159,14 +177,9 @@ td
 }
 
 @keyframes rollDown3 {
-  33%{
+  0%{
     top: -200px;
     transform: rotateX(-90deg);
-  }
-  44%{
-    top: -74px;
-    transform: rotateX(0deg);
-    opacity: 1;
   }
   55%{
     top: -74px;
@@ -174,6 +187,11 @@ td
     opacity: 1;
   }
   66%{
+    top: -74px;
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  77%{
     top: 50px;
     transform: rotateX(30deg);
     opacity: 0;
